@@ -4,6 +4,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.utils.exceptions import NetworkError
 from app.config.env import BOT_TOKEN
 from app.handlers.main_handler import register_all_handlers
+from app.config.config import LOG_DIR
 from loguru import logger
 
 
@@ -13,7 +14,7 @@ def __on_start_up(dp: Dispatcher):
     Запускает функции на старте программы
     """
     # настройка логгера
-    logger.add('log.json', format='{time} {level} {message}', level='DEBUG', rotation='10:00', serialize=True)
+    logger.add(LOG_DIR, format='{time} {level} {message}', level='DEBUG', rotation='10:00', serialize=True)
     logger.info('Запуск бота')
     # регистрируем все обработчики
     register_all_handlers(dp)
