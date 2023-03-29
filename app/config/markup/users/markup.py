@@ -6,6 +6,6 @@ from aiogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, C
 
 def create_admin_start_markup() -> InlineKeyboardMarkup:
     markup = InlineKeyboardMarkup().add(InlineKeyboardButton('Записаться на тренировку', callback_data=' '))\
-        .add(InlineKeyboardButton(text='Настройки', callback_data=' '))\
-        .add(InlineKeyboardButton(text='Настройки', callback_data=' '))
+        .add(InlineKeyboardButton(text='Процесс тренировки', callback_data=' '))
+    
     return markup
