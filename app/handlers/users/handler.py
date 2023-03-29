@@ -8,7 +8,6 @@ from aiogram.types import Message, InputFile, CallbackQuery
 
 # async def show_catalog(query: CallbackQuery) -> None:
 #     await query.bot.answer_callback_query(query.id)
-#     await query.bot.delete_message(query.message.chat.id, query.message.message_id)
 #     await query.bot.send_message(query.from_user.id, text='Мы готовим...', reply_markup=create_catalog_markup(query))
 
 
