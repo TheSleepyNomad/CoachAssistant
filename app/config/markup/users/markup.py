@@ -14,9 +14,9 @@ def create_user_start_markup() -> InlineKeyboardMarkup:
 
 def description_school_markup() -> InlineKeyboardMarkup:
     markup = InlineKeyboardMarkup()\
-        .add(InlineKeyboardButton('Описание стиля', callback = ' '))\
-        .add(InlineKeyboardButton('Лучшие ученики', callback = ' '))\
-        .add(InlineKeyboardButton('Тренеры школы', callback = ' '))\
-        .add(InlineKeyboardButton('Назад', callback = ' '))\
+        .add(InlineKeyboardButton('Описание стиля', callback_data=' '))\
+        .add(InlineKeyboardButton('Лучшие ученики', callback_data=' '))\
+        .add(InlineKeyboardButton('Тренеры школы', callback_data=' '))\
+        .add(InlineKeyboardButton('Назад', callback_data=' '))\
         
     return markup
