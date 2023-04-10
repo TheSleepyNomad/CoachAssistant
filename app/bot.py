@@ -5,6 +5,7 @@ from aiogram.utils.exceptions import NetworkError
 from app.config.env import BOT_TOKEN
 from app.handlers.main_handler import register_all_handlers
 from app.config.config import LOG_DIR
+from app.db.models import register_models
 from loguru import logger
 
 
@@ -18,6 +19,7 @@ def __on_start_up(dp: Dispatcher):
     logger.info('Запуск бота')
     # регистрируем все обработчики
     register_all_handlers(dp)
+    register_models()
     
 
 def start_app():
