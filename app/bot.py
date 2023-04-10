@@ -18,7 +18,10 @@ def __on_start_up(dp: Dispatcher):
     logger.add(LOG_DIR, format='{time} {level} {message}', level='DEBUG', rotation='10:00', serialize=True)
     logger.info('Запуск бота')
     # регистрируем все обработчики
+    logger.info('Регистрация обработчиков')
     register_all_handlers(dp)
+    # регистрируем модели базы данных
+    logger.info('Создание и регистрация таблиц базы данных')
     register_models()
     
 
