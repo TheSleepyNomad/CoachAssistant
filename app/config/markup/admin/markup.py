@@ -15,7 +15,16 @@ def create_admin_start_markup() -> InlineKeyboardMarkup:
     
     return markup
 
-def create_admin_journal_markup() -> InlineKeyboardMarkup:
-    #* wait Roman Sobchenko
-    pass
+def create_admin_reports_markup() -> InlineKeyboardMarkup:
+    """
+    Создает раскладку кнопок для отчетов администратора
+    """
+    markup = InlineKeyboardMarkup()\
+        .add(InlineKeyboardButton('Отчет: Мои ученики', callback_data=' '))\
+        .add(InlineKeyboardButton('Отчет: Неоплаченные занятия', callback_data=' '))\
+        .add(InlineKeyboardButton('Отчет: Кто больше всех ходит', callback_data=' '))\
+        .add(InlineKeyboardButton('Отчет: Самый посещаемый месяц', callback_data=' '))\
+        .add(InlineKeyboardButton('Назад', callback_data=' '))\
+    
+    return markup
 
