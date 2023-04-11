@@ -24,7 +24,7 @@ def create_admin_reports_markup() -> InlineKeyboardMarkup:
         .add(InlineKeyboardButton('Отчет: Неоплаченные занятия', callback_data=' '))\
         .add(InlineKeyboardButton('Отчет: Кто больше всех ходит', callback_data=' '))\
         .add(InlineKeyboardButton('Отчет: Самый посещаемый месяц', callback_data=' '))\
-        .add(InlineKeyboardButton('Назад', callback_data=' '))\
+        .add(InlineKeyboardButton('Назад', callback_data='back_to_start'))\
     
     return markup
 
