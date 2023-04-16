@@ -17,6 +17,6 @@ def description_school_markup() -> InlineKeyboardMarkup:
         .add(InlineKeyboardButton('Описание стиля', callback_data=' '))\
         .add(InlineKeyboardButton('Лучшие ученики', callback_data=' '))\
         .add(InlineKeyboardButton('Тренеры школы', callback_data=' '))\
-        .add(InlineKeyboardButton('Назад', callback_data=' '))\
+        .add(InlineKeyboardButton('Назад', callback_data='back'))\
         
     return markup
