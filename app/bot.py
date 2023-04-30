@@ -7,6 +7,8 @@ from app.handlers.main_handler import register_all_handlers
 from app.config.config import LOG_DIR
 from app.db.models import register_models
 from loguru import logger
+from app.db.methods.create import add_students
+from app.db.methods.select import select_all_students, select_all_students_who_not_payed
 
 
 

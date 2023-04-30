@@ -3,7 +3,7 @@ from app.db.db_engine import Database
 from json import dumps as json_dumps
 
 
-class Products(Database.BASE):
+class Journal(Database.BASE):
 
     # имя таблицы
     __tablename__ = 'journal'
@@ -21,7 +21,6 @@ class Products(Database.BASE):
     def __repr__(self) -> json_dumps:
         # json string
         return json_dumps({'id': self.id,
-                           'date': self.date,
                            'first_name': self.first_name,
                            'second_name': self.second_name,
                            'username': self.username,
