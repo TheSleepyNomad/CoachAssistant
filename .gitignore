@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 app/logs/
+app/db/data.sqlite
 
 # C extensions
 *.so
