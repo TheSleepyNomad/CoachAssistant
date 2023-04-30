@@ -21,7 +21,6 @@ class Journal(Database.BASE):
     def __repr__(self) -> json_dumps:
         # json string
         return json_dumps({'id': self.id,
-                           'date': self.date,
                            'first_name': self.first_name,
                            'second_name': self.second_name,
                            'username': self.username,
